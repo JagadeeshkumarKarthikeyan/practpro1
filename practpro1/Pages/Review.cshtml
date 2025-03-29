@@ -1,0 +1,30 @@
+﻿@page
+@model practpro1.Pages.ReviewModel
+@{
+}
+
+<form method="post">
+	<div class="container">
+		<div class="row">
+			<div class="col-1">Name</div>
+			<div class="col-1"><input type="text" asp-for="_review.name" /></div>
+		</div>
+		<div class="row">
+			<div class="col-1">movie</div>
+			<div class="col-1"><input type="text" asp-for="_review.movie"/></div>
+		</div>
+		<div class="row">
+			<div class="col-1">comments</div>
+			<div class="col-1"><input type="text" asp-for="_review.comments"/></div>
+		</div>
+		<div class="row">
+			<div class="col-1">rating</div>
+			<div class="col-1"><input type="number" asp-for="_review.rating"/></div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<input type="submit" value="submit" name="submit" />
+			</div>
+		</div>
+	</div>
+</form>
